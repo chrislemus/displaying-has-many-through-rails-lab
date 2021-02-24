@@ -1,0 +1,4 @@
+<%@appointments.each do |appt|%>
+<p><%=appt.human_datetime%></p>
+<a href=<%="/patients/#{appt.patient.id}"%>> <%=appt.patient.name%> </a>
+<%end%>

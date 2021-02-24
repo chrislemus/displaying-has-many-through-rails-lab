@@ -1,0 +1,4 @@
+<h1>appointment</h1>
+<span><%=@appointment.human_datetime%></span>
+<a href=<%="/doctors/#{@appointment.doctor.id}"%>><%=@appointment.doctor.name%></a>
+<a href=<%="/patients/#{@appointment.patient.id}"%>><%=@appointment.patient.name%></a>
